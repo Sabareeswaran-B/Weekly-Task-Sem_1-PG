@@ -1,0 +1,46 @@
+.card
+{
+  width: 500px;
+  margin: 50px;
+  border: 3px double silver;
+  padding: 30px;
+  background-color: #21e6c1;
+
+}
+body
+{
+  align-items: center;
+  color: color;
+}
+form .row label
+{
+  text-align: center;
+}
+form .row input
+{
+  align-items: center;
+color: white;
+}
+form .row input
+{
+  align-items: center;
+  background-color: #21e6c1;
+color: white;
+}
+div .gender
+{
+  margin: 10px;
+}
+ #primaryinfo {
+  display: none;
+}
+ .primary p{
+  color: white;
+}
+.primary h2{
+ color: white;
+}
+.personal h2
+{
+  color: white;
+}

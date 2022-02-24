@@ -1,0 +1,52 @@
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+.container
+      {
+        margin-top: 100px;
+        width: 1300px;
+      }
+
+.card {
+  width: 300px;
+  height: 400px;
+  /* box-shadow:5px 1px 1px 5px silver; */
+  box-shadow: 5px 5px silver, 10px 10px silver, 15px 15px silver;
+  align-items: center;
+}
+
+.card hr {
+  width: 250px;
+
+}
+
+.profile a:hover {
+  border-bottom: 5px solid red;
+  width: 70px;
+}
+
+.profileCard {
+  display: none;
+}
+
+.profile:hover .profileCard {
+  display: block;
+}
+
+a {
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+}
+.list li a
+{
+  padding: 2px;
+  margin-left: 30px;
+}
+.button
+{
+  color: red;
+  font-weight: bold;
+}

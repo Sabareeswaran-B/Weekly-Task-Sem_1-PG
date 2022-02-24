@@ -1,0 +1,76 @@
+/* Header */
+header {
+  background-color: #fff;
+  width: 100%;
+  min-height: 60px;
+  max-width: 92%;
+  margin: auto;
+}
+
+.headerContainer {
+  display: flex;
+}
+/* Myntra Logo */
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 70px;
+  margin-top: 10px;
+}
+header .bag, .secure
+{
+  margin-left: 360px;
+  margin-top: 27px;
+  font-size: 10px;
+  font-weight: bold;
+ letter-spacing: 3px;
+ color: #696b79;
+}
+header .bag span
+{
+  color: #20bd99;
+    border-bottom: 2px solid #20bd99;
+}
+.secure img
+{
+  height: 30px;
+  width:30px;
+}
+.delivery
+{
+  border: 1px solid silver;
+  padding: 10px;
+  border-radius: 5px;
+}
+.delivery img{
+  height: 30px;
+}
+.offer
+{
+  border: 1px solid silver;
+  border-left: 3px solid #20bd99;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+}
+.shopping
+{
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+}
+.product, .product1
+{
+  margin: 10px 0 10px 0;
+  border: 1px solid silver;
+  border-radius: 5px;
+  padding: 5px;
+}
+.remove, .remove1
+{
+  cursor: pointer;
+}
+/* See More/Less */
+.more
+{
+  display: none;
+}

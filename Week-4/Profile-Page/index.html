@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="image\myntra-icon.png">
+  <title>Online Shopping for Women,Men,Kids Fashion & Lifestyle-Myntra </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheet\style.css">
+</head>
+
+<body>
+  <div id="personal" class="personal">
+
+    <div class="card">
+      <div class="card-head">
+        <h2>Personal Informations</h2>
+      </div>
+      <hr>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-6">
+            <label>First Name</label>
+          </div>
+          <div class="col-lg-6">
+            <input type="text" id="firstName" class="form-control" name="firstName" value="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label>Last Name</label>
+          </div>
+          <div class="col-lg-6">
+            <input type="text" id="lastName" class="form-control" name="lastName" value="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label>Gender</label>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <input type="radio" id="male" class="gender" name="gender" value="Male" checked>Male
+            </div>
+            <div class="row">
+              <input type="radio" id="female" class="gender" name="gender" value="Female">Female
+            </div>
+            <div class="row">
+              <input type="radio" id="other" class="gender" name="gender" value="Other">Other
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label>Date Of Birth</label>
+          </div>
+          <div class="col-lg-6">
+            <input type="date" id="dob" class="form-control" name="dob" value="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label>Bio</label>
+          </div>
+          <div class="col-lg-6">
+            <input type="text" id="bio" class="form-control" name="bio" value="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label>Mobile Number</label>
+          </div>
+          <div class="col-lg-6">
+            <input type="phone" id="phone" class="form-control" name="phone" value="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label>Location</label>
+          </div>
+          <div class="col-lg-6">
+            <input type="text" id="location" class="form-control" name="location" value="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label>Email</label>
+          </div>
+          <div class="col-lg-6">
+            <input type="email" id="email" class="form-control" name="email" value="">
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary btn-outline-secondary btn-lg" name="button" onclick="submit()">Submit</button>
+        <button type="button" class="btn btn-primary btn-outline-secondary btn-lg" name="button" onclick="cancel()">Cancel</button>
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+  <div class="card primary" id="primaryinfo">
+    <div class="card-head">
+      <h2>Primary Informations</h2>
+    </div>
+    <hr>
+    <div class="card-body">
+      <form class="form-group">
+        <div class="row">
+          <div class="col-lg-6">
+            <label>First Name</label>
+          </div>
+          <div class="col-lg-6">
+            <p id="firstName1"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label>Last Name</label>
+          </div>
+          <div class="col-lg-6">
+            <p id="lastName1"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label>Gender</label>
+          </div>
+          <div class="col-lg-6">
+            <p id="gender1"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label>Date Of Birth</label>
+          </div>
+          <div class="col-lg-6">
+            <p id="dob1"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label>Bio</label>
+          </div>
+          <div class="col-lg-6">
+            <p id="bio1"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label>Mobile Number</label>
+          </div>
+          <div class="col-lg-6">
+
+            <p id="phone1"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label>Location</label>
+          </div>
+          <div class="col-lg-6">
+            <p id="location1"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label>Email</label>
+          </div>
+          <div class="col-lg-6">
+            <p id="email1"></p>
+          </div>
+        </div>
+        <button type="button" class="btn btn-info btn-lg" name="button" onclick="modify()">Edit</button>
+    </div>
+    </form>
+  </div>
+  </div>
+  <script type="text/javascript">
+    function submit() {
+
+      var x = document.getElementById("primaryinfo");
+      var y = document.getElementById("personal");
+      var gender1;
+      x.style.display = "block";
+      y.style.display = "none";
+
+      if((document.getElementById("firstName").value==null) || (document.getElementById("firstName").value==""))
+      {
+        alert("Plese Enter your Name");
+      }
+      if((document.getElementById("lastName").value==null) || (document.getElementById("lastName").value==""))
+      {
+        alert("Plese Enter your Last Name");
+      }
+      if((document.getElementById("dob").value==null) || (document.getElementById("dob").value==""))
+      {
+        alert("Plese Enter your dob");
+      }
+      if((document.getElementById("bio").value==null) || (document.getElementById("bio").value==""))
+      {
+        alert("Plese Enter your Bio");
+      }
+      if((document.getElementById("phone").value==null) || (document.getElementById("phone").value==""))
+      {
+        alert("Plese Enter your phone no");
+      }
+      if((document.getElementById("location").value==null) || (document.getElementById("location").value==""))
+      {
+        alert("Plese Enter your location");
+      }
+      if((document.getElementById("email").value==null) || (document.getElementById("email").value==""))
+      {
+        alert("Plese Enter your email");
+      }
+
+      document.getElementById("firstName1").innerHTML = document.getElementById("firstName").value;
+      document.getElementById("lastName1").innerHTML = document.getElementById("lastName").value;
+      document.getElementById("dob1").innerHTML = document.getElementById("dob").value;
+      document.getElementById("bio1").innerHTML = document.getElementById("bio").value;
+      document.getElementById("phone1").innerHTML = document.getElementById("phone").value;
+      document.getElementById("location1").innerHTML = document.getElementById("location").value;
+      document.getElementById("email1").innerHTML = document.getElementById("email").value;
+      if (document.getElementById('male').checked) {
+        gender1 = document.getElementById('male').value;
+        document.getElementById('gender1').innerHTML = gender1;
+
+      }
+      else if (document.getElementById('female').checked) {
+        gender1 = document.getElementById('female').value;
+        document.getElementById('gender1').innerHTML = gender1;
+
+      }
+      else if (document.getElementById('other').checked) {
+        gender1 = document.getElementById('other').value;
+        document.getElementById('gender1').innerHTML = gender1;
+
+      }
+
+    }
+
+    function modify() {
+      var x = document.getElementById("primaryinfo");
+      var y = document.getElementById("personal");
+      x.style.display = "none";
+      y.style.display = "block";
+    }
+    function cancel()
+    {
+      var x = document.getElementById("primaryinfo");
+      var y = document.getElementById("personal");
+      x.style.display = "block";
+      y.style.display = "none";
+    }
+
+  </script>
+</body>
+
+</html>
